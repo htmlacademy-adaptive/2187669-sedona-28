@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Артем Михайлов](https://up.htmlacademy.ru/adaptive/28/user/2187669).
-* Наставник: `Неизвестно`.
+* Наставник: [Алена Сафьянникова](https://htmlacademy.ru/profile/safyann).
 
 ---
 
