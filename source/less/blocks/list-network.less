@@ -1,0 +1,58 @@
+.list-network {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 6px;
+  width: 156px;
+  min-height: 48px;
+  background-color: inherit;
+  color: @white;
+  text-align: center;
+  list-style-type: none;
+}
+
+.list-network__item {
+  display: block;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.list-network__link {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  background-color: @blue;
+  transition: background-color 0.5s;
+
+  &:hover {
+    background-color: @hover-color;
+  }
+
+  &:active {
+    background-color: @active-color;
+  }
+}
+
+.list-network__link .list-network__icon {
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.list-network__icon-wrapper {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+}
+
+.list-network__icon {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

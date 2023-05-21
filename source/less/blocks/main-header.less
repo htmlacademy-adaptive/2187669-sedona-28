@@ -1,0 +1,52 @@
+.main-header {
+  min-width: 320px;
+  min-height: 56px;
+  background-color: @white;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.main-header__wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  z-index: 3;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+.main-header__logo {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 185px;
+  height: 96px;
+  top: 0;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  cursor: pointer;
+  transition: opacity 0.5s;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.main-header__navigation {
+  margin: 0 auto;
+}

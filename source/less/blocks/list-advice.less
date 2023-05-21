@@ -1,0 +1,153 @@
+.list-advice {
+  min-width: 320px;
+  background-color: @white;
+  color: @brown;
+  text-align: left;
+}
+
+.list-advice__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 7px 0 0 47px;
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+    gap: 24px;
+    padding: 158px 33px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    padding: 169px 50px 69px;
+  }
+}
+
+.list-advice__icon-housing {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  color: @blue;
+
+  @media (min-width: @tablet-width) {
+    width: 77px;
+    height: 72px;
+    top: 60px;
+    left: 89px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 79px;
+    height: 72px;
+    top: 69px;
+    left: 160px;
+  }
+}
+
+.list-advice__icon-food {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  color: @blue;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 68px;
+    top: 62px;
+    left: 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 73px;
+    height: 69px;
+    top: 72px;
+    left: 162px;
+  }
+}
+
+.list-advice__item--bottom-food {
+  @media (min-width: @tablet-width) {
+    padding: 156px 33px 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 166px 50px 71px;
+  }
+}
+
+.list-advice__icon-souvenirs {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  width: 32px;
+  height: 38px;
+  top: 0;
+  left: 0;
+  color: @blue;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 67px;
+    height: 75px;
+    top: 64px;
+    left: 98px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 78px;
+    top: 69px;
+    left: 160px;
+  }
+}
+
+.list-advice__item--bottom-souvenirs {
+  @media (min-width: @tablet-width) {
+    padding: 153px 33px 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 170px 50px 67px;
+  }
+}
+
+.list-advice__title {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
+}
+
+.list-advice__description {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+    margin: 0;
+  }
+
+  @media (max-width: 767px) {
+    br {
+      display: none;
+    }
+  }
+}

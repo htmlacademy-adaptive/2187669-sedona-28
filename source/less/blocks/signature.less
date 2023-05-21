@@ -1,0 +1,40 @@
+.signature {
+  display: block;
+  background-color: inherit;
+  text-align: left;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: @brown;
+}
+
+.signature--padding {
+  padding-left: 16px;
+}
+
+.signature--right {
+  text-align: right;
+}
+
+.signature--color {
+  color: @brown;
+
+  @media (min-width: @desktop-width) {
+    color: @white;
+  }
+}
+
+.signature--big {
+  text-transform: uppercase;
+}
+
+.signature--form {
+  font-size: 12px;
+  opacity: 60%;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    padding-top: 24px;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,92 @@
+.about-image {
+  background-color: @white;
+  color: @black;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.about-image--color {
+  background-color: inherit;
+
+  @media (min-width: @tablet-width) {
+    background-color: @light-gray;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: @white;
+  }
+}
+
+.about-image__author-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 178px;
+  margin-right: auto;
+
+  @media (min-width: @desktop-width) {
+    gap: 2px;
+  }
+}
+
+.about-image__name {
+  margin-block: 0;
+}
+
+.about-image__name--big {
+  text-transform: uppercase;
+}
+
+.about-image__signature {
+  margin: 0;
+}
+
+.about-image__likes-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  max-width: 70px;
+
+  @media (min-width: @tablet-width) {
+    gap: 9px;
+  }
+}
+
+.about-image__button {
+  background-color: inherit;
+  border: 0;
+  opacity: 30%;
+  padding: 0 0 5px 0;
+  cursor: pointer;
+  transition: opacity 0.5s;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 10%;
+  }
+}
+
+.about-image__icon {
+  display: block;
+}
+
+.about-image__quantity--bold {
+  font-weight: 700;
+}
+
+.about-image__button--color-light {
+  @media (min-width: @desktop-width) {
+    color: @white;
+    opacity: 1;
+  }
+}
