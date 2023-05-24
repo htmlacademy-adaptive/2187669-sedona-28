@@ -3,7 +3,6 @@ import plumber from 'gulp-plumber';
 import less from 'gulp-less';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
-<<<<<<< HEAD
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import terser from 'gulp-terser';
@@ -11,14 +10,11 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
-=======
->>>>>>> 81daa57c03be1590d9d1da885719cfb30baa63db
 import browser from 'browser-sync';
 
 // Styles
 
 export const styles = () => {
-<<<<<<< HEAD
 return gulp.src('source/less/style.less', { sourcemaps: true })
 .pipe(plumber())
 .pipe(less())
@@ -125,36 +121,11 @@ done();
 const reload = (done) => {
 browser.reload();
 done();
-=======
-  return gulp.src('source/less/style.less', { sourcemaps: true })
-    .pipe(plumber())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
-    .pipe(browser.stream());
-}
-
-// Server
-
-const server = (done) => {
-  browser.init({
-    server: {
-      baseDir: 'source'
-    },
-    cors: true,
-    notify: false,
-    ui: false,
-  });
-  done();
->>>>>>> 81daa57c03be1590d9d1da885719cfb30baa63db
 }
 
 // Watcher
 
 const watcher = () => {
-<<<<<<< HEAD
 gulp.watch('source/less/**/*.less', gulp.series(styles));
 gulp.watch('source/js/script.js', gulp.series(scripts));
 gulp.watch('source/*.html', gulp.series(html, reload));
@@ -194,13 +165,3 @@ gulp.series(
 server,
 watcher
 ));
-=======
-  gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
-}
-
-
-export default gulp.series(
-  styles, server, watcher
-);
->>>>>>> 81daa57c03be1590d9d1da885719cfb30baa63db
