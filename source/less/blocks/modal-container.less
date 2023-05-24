@@ -1,0 +1,141 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+
+.modal-container--close {
+  display: none;
+}
+
+.modal-container__error {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 45px 42px 35px 41px;
+  gap: 28px;
+  width: 320px;
+  background-color: @white;
+  color: @brown;
+  text-align: center;
+  z-index: 3;
+
+  @media (min-width: @tablet-width) {
+    width: 400px;
+    padding: 50px 47px 49px 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    padding: 48px 47px 49px 46px;
+  }
+}
+
+.modal-container__error-button {
+  width: 180px;
+  padding: 18px 63px 14px;
+  margin: 0 auto;
+  border: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 272px;
+    padding: 18px 107px 14px;
+  }
+}
+
+.modal-container__normal {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 320px;
+  background-color: @white;
+  color: @brown;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 640px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 640px;
+  }
+}
+
+.modal-container__normal-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 39px 39px 30px 37px;
+
+  @media (min-width: @tablet-width) {
+    width: 640px;
+    padding: 53px 99px 30px 97px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 640px;
+    padding: 51px 99px 28px 97px;
+  }
+}
+
+.modal-container__normal-wrapper-button {
+  width: 320px;
+  padding: 20px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 640px;
+    padding: 44px 91px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 640px;
+    padding: 44px 91px;
+  }
+}
+
+.modal-container__normal-wrapper-button--creative {
+  background-color: @light-gray;
+}
+
+.modal-container__normal-button {
+  width: 280px;
+  padding: 18px 60px 14px;
+  margin: 0 auto;
+  border: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+    padding: 18px 139px 14px;
+  }
+}
+
+.modal-container__error-title {
+  @media (max-width: 767px) {
+    br {
+      display: none;
+    }
+  }
+}
+
+.modal-container__error--inactive {
+  display: none;
+}
+
+.modal-container__normal-description {
+  @media (max-width: 767px) {
+    br {
+      display: none;
+    }
+  }
+}

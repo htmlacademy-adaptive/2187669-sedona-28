@@ -1,0 +1,20 @@
+.main-inner {
+  min-width: 320px;
+  background-color: @white;
+  color: @brown;
+}
+
+.main-inner__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}

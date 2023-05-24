@@ -1,0 +1,98 @@
+.foto-about {
+  background-color: @white;
+  color: @brown;
+  text-align: center;
+}
+
+.foto-about__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 768px;
+    padding: 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1200px;
+    padding: 0;
+  }
+}
+
+.foto-about__information {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 37px 0 25px;
+  max-width: 280px;
+
+  @media (max-width: @mobile-width-only) {
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: 1;
+      width: 320px;
+      height: 1px;
+      bottom: 0;
+      left: -20px;
+      background-color: #e5e5e5;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 458px;
+    padding: 66px 0 82px;
+    gap: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 100px 0 90px;
+  }
+}
+
+.foto-about__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-block: 0;
+  padding-inline: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 648px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    width: 1200px;
+  }
+}
+
+.foto-about__description {
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+}

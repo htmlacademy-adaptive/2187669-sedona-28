@@ -1,0 +1,38 @@
+.description {
+  color: @brown;
+  background-color: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  margin-block: 0;
+  padding-inline: 0;
+}
+
+.description--left {
+  text-align: left;
+}
+
+.description--color-light {
+  color: @white;
+}
+
+.description--size-short {
+  @media (min-width: @desktop-width) {
+    margin: 0 10px;
+  }
+}
+
+.description--size-canyon {
+  @media (max-width: @mobile-width-only) {
+    margin: 0 15px;
+  }
+}
+
+.description--normal {
+  font-weight: 400;
+}
+
+.description--retreat {
+  @media (min-width: @desktop-width) {
+    margin: 0 35px;
+  }
+}
