@@ -1,7 +1,17 @@
 .main-index {
-  min-width: 320px;
   background-color: @white;
   color: @brown;
+  max-width: 320px;
+  width: 100%;
+  flex-grow: 1;
+
+  @media (min-width: @tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+  }
 }
 
 .main-index__wrapper {
@@ -11,10 +21,10 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    max-width: 768px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
