@@ -50,12 +50,12 @@
 
 .hero__image-index-mountains {
   width: 320px;
-  height: 389px;
+  min-height: 389px;
   background-color: @gray;
 
   @media (min-width: @tablet-width) {
     width: 768px;
-    height: 518px;
+    min-height: 518px;
     object-fit: cover;
   }
 
@@ -68,7 +68,7 @@
   position: absolute;
   content: "";
   width: 282px;
-  height: 214px;
+  min-height: 214px;
   top: 90px;
   bottom: 85px;
   left: 50%;
@@ -76,7 +76,7 @@
 
   @media (min-width: @tablet-width) {
     width: 461px;
-    height: 350px;
+    min-height: 350px;
     top: 77px;
     bottom: 91px;
   }
@@ -86,7 +86,7 @@
   position: absolute;
   content: "";
   width: 229px;
-  height: 39px;
+  min-height: 39px;
   top: 52px;
   bottom: 67px;
   left: 50%;
@@ -94,7 +94,7 @@
 
   @media (min-width: @tablet-width) {
     width: 456px;
-    height: 78px;
+    min-height: 78px;
     top: 95px;
     bottom: 117px;
     object-fit: contain;
@@ -102,7 +102,7 @@
 
   @media (min-width: @desktop-width) {
     width: 460px;
-    height: 80px;
+    min-height: 80px;
     top: 102px;
     bottom: 120px;
   }
@@ -110,7 +110,7 @@
 
 .hero__image-catalog-mountains {
   width: 320px;
-  height: 214px;
+  min-height: 214px;
   position: relative;
   top: -56px;
   margin-bottom: -56px;
@@ -118,7 +118,7 @@
 
   @media (min-width: @tablet-width) {
     width: 768px;
-    height: 346px;
+    min-height: 346px;
     top: -56px;
     margin-bottom: -56px;
     object-fit: cover;
@@ -126,7 +126,7 @@
 
   @media (min-width: @desktop-width) {
     width: 1200px;
-    height: 518px;
+    min-height: 518px;
     top: -217px;
     margin-bottom: -217px;
   }
@@ -139,7 +139,7 @@
     z-index: 2;
     max-width: 320px;
     width: 100%;
-    height: 57px;
+    min-height: 57px;
     bottom: -1px;
     left: -440px;
     background: url("../img/hero/hero_vector.svg") no-repeat center bottom / cover;
