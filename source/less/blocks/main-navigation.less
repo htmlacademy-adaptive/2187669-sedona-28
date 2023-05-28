@@ -144,7 +144,7 @@
   margin-right: auto;
   padding: 0;
   width: 68px;
-  height: 56px;
+  min-height: 56px;
   background-color: @white;
   border: 0;
   z-index: 3;
@@ -262,11 +262,11 @@
   @media (max-width: @mobile-width-only) {
     position: absolute;
     content: "";
-    top: 227px;
+    top: 220px;
     left: 160px;
     display: block;
     width: 160px;
-    height: 80px;
+    min-height: 80px;
     cursor: pointer;
     transition: opacity 0.5s;
 
@@ -280,7 +280,7 @@
 
     .main-header__logo-icon {
       width: 160px;
-      height: 80px;
+      min-height: 80px;
     }
   }
 }

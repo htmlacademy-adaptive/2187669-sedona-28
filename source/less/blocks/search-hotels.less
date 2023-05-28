@@ -66,7 +66,7 @@
   display: block;
   border: none;
   width: 320px;
-  height: 350px;
+  min-height: 350px;
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -77,10 +77,15 @@
   }
 }
 
+.search-hotels--nojs iframe {
+  display: none;
+}
+
 .search-hotels__link {
   position: relative;
   margin: 0 auto;
   background-color: @gray;
+  display: block;
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -100,7 +105,7 @@
 }
 
 .search-hotels__picture {
-  height: 350px;
+  min-height: 350px;
 
   @media (min-width: @tablet-width) {
     min-width: 768px;
@@ -115,10 +120,14 @@
   position: absolute;
   content: "";
   width: 27px;
-  height: 27px;
+  min-height: 27px;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
+}
+
+.search-hotels__map-iframe--nojs {
+  display: none;
 }
